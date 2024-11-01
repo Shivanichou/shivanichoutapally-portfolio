@@ -1,27 +1,129 @@
+/* Basic Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
 }
 
-header, footer {
-  background-color: #333;
+header {
+  background-color: #1a1a1a;
   color: #fff;
   text-align: center;
-  padding: 1em 0;
+  padding: 2em 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-style: italic;
+  font-size: 1.2em;
+  color: #ddd;
+  margin-top: 0.5em;
+}
+
+/* Section Styling */
 section {
-  padding: 2em;
-  max-width: 800px;
-  margin: auto;
+  padding: 3em;
+  max-width: 900px;
+  margin: 2em auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
+/* Section Headers */
+h2 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid #f4f4f4;
+  padding-bottom: 0.2em;
+}
+
+/* Project Section */
+.project {
+  margin-bottom: 2em;
+}
+
+.project h3 {
+  font-size: 1.5em;
+  color: #1a73e8;
+  margin-bottom: 0.5em;
+}
+
+.project p {
+  color: #555;
+  font-size: 1em;
+}
+
+.project strong {
   color: #333;
 }
 
-.project, .skills, .education, .contact {
-  margin-bottom: 1.5em;
+/* Skills, Education, Contact Styling */
+.skills ul, .education ul, .contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills li, .education li, .contact li {
+  background-color: #f7f7f7;
+  margin: 0.5em 0;
+  padding: 0.8em;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer Styling */
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 1.5em 0;
+  font-size: 0.9em;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Links */
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Button Styles (for potential future buttons) */
+button {
+  background-color: #1a73e8;
+  color: #fff;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #135ab8;
+}
+
+/* Subtle Animations */
+section, .project, .skills li, .education li, .contact li {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover, .project:hover, .skills li:hover, .education li:hover, .contact li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
