@@ -5,28 +5,29 @@ body {
   padding: 0;
   background-color: #f0f2f5;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
+/* Header Styling */
 header {
-  background-color: #1a1a1a;
-  color: #fff;
+  background-color: #212121;
+  color: #ffffff;
   text-align: center;
-  padding: 2em 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2.5em 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 header h1 {
-  font-size: 2.5em;
+  font-size: 2.8em;
   margin: 0;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 header p {
   font-style: italic;
-  font-size: 1.2em;
-  color: #ddd;
-  margin-top: 0.5em;
+  font-size: 1.3em;
+  color: #cccccc;
+  margin-top: 0.3em;
 }
 
 /* Section Styling */
@@ -34,38 +35,35 @@ section {
   padding: 3em;
   max-width: 900px;
   margin: 2em auto;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Section Headers */
 h2 {
-  color: #333;
+  color: #333333;
   font-size: 2em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.8em;
   border-bottom: 2px solid #f4f4f4;
-  padding-bottom: 0.2em;
+  padding-bottom: 0.3em;
 }
 
 /* Project Section */
 .project {
-  margin-bottom: 2em;
+  margin-bottom: 2.5em;
 }
 
 .project h3 {
-  font-size: 1.5em;
+  font-size: 1.6em;
   color: #1a73e8;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
 }
 
 .project p {
-  color: #555;
+  color: #555555;
   font-size: 1em;
-}
-
-.project strong {
-  color: #333;
+  line-height: 1.6;
 }
 
 /* Skills, Education, Contact Styling */
@@ -75,40 +73,42 @@ h2 {
 }
 
 .skills li, .education li, .contact li {
-  background-color: #f7f7f7;
-  margin: 0.5em 0;
-  padding: 0.8em;
-  border-radius: 5px;
+  background-color: #f8f8f8;
+  margin: 0.6em 0;
+  padding: 1em;
+  border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Footer Styling */
 footer {
-  background-color: #1a1a1a;
-  color: #fff;
+  background-color: #212121;
+  color: #ffffff;
   text-align: center;
-  padding: 1.5em 0;
+  padding: 2em 0;
   font-size: 0.9em;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Links */
+/* Link Styling */
 a {
   color: #1a73e8;
   text-decoration: none;
+  font-weight: 500;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-/* Button Styles (for potential future buttons) */
+/* Button Styles */
 button {
   background-color: #1a73e8;
-  color: #fff;
+  color: #ffffff;
   padding: 0.8em 1.5em;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   font-size: 1em;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -118,12 +118,9 @@ button:hover {
   background-color: #135ab8;
 }
 
-/* Subtle Animations */
-section, .project, .skills li, .education li, .contact li {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-section:hover, .project:hover, .skills li:hover, .education li:hover, .contact li:hover {
-  transform: translateY(-5px);
+/* Hover Animation */
+.project:hover, .skills li:hover, .education li:hover, .contact li:hover {
+  transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
+
